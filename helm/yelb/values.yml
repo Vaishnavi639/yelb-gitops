@@ -1,0 +1,17 @@
+yelb-ui:
+  image:
+    repository: ghcr.io/<your-username>/yelb-ui
+    tag: latest
+  replicas: 1
+
+yelb-appserver:
+  image:
+    repository: ghcr.io/<your-username>/yelb-appserver
+    tag: latest
+  replicas: 1
+
+redis-server:
+  image: redis:6.0.9
+
+yelb-db:
+  image: mreferre/yelb-db:0.10

@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: yelb-ui
+spec:
+  replicas: {{ .Values.yelb-ui.replicas }}
+  selector:
+    matchLabels:
+      app: yelb-ui
+  template:
+    metadata:
+      labels:
+        app: yelb-ui
+    spec:
+      containers:
+        - name: yelb-ui
+          image: "{{ .Values.yelb-ui.image.repository }}:{{ .Values.yelb-ui.image.tag }}"
+          ports:
+            - containerPort: 80
