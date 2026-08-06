@@ -6,7 +6,7 @@ yelb-ui:
 yelb-appserver:
   image:
     repository: ghcr.io/Vaishnavi639/yelb-appserver
-    tag: latest
+    tag: 1290057a89d9ddf2e94df6ab9e1f99b2bfbc4303
   replicas: 1
 redis-server:
   image: redis:6.0.9
