@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: yelb-appserver
 spec:
-  replicas: {{ .Values.yelb-appserver.replicas }}
+  replicas: {{ (index .Values "yelb-appserver").replicas }}
   selector:
     matchLabels:
       app: yelb-appserver
@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: yelb-appserver
-          image: "{{ .Values.yelb-appserver.image.repository }}:{{ .Values.yelb-appserver.image.tag }}"
+          image: "{{ (index .Values "yelb-appserver").image.repository }}:{{ (index .Values "yelb-appserver").image.tag }}"
           ports:
             - containerPort: 4567
           env:
