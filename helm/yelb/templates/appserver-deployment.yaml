@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: yelb-appserver
-          image: "{{ (index .Values "yelb-appserver").image.repository }}:{{ (index .Values "yelb-appserver").image.tag }}"
+          image: '{{ (index .Values "yelb-appserver").image.repository }}:{{ (index .Values "yelb-appserver").image.tag }}'
           ports:
             - containerPort: 4567
           env:
