@@ -1,11 +1,11 @@
 yelb-ui:
   image:
-    repository: ghcr.io/Vaishnavi639/yelb-ui
+    repository: ghcr.io/vaishnavi639/yelb-ui
     tag: d5f4a9ad19be743c1172c6f8a28385057af57790
   replicas: 1
 yelb-appserver:
   image:
-    repository: ghcr.io/Vaishnavi639/yelb-appserver
+    repository: ghcr.io/vaishnavi639/yelb-appserver
     tag: 1290057a89d9ddf2e94df6ab9e1f99b2bfbc4303
   replicas: 1
 redis-server:
