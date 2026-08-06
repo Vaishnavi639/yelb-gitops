@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: yelb-db
-          image: "{{ index .Values "yelb-db" "image" }}"
+          image: '{{ index .Values "yelb-db" "image" }}'
           ports:
             - containerPort: 5432
