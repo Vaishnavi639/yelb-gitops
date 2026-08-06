@@ -11,4 +11,4 @@ yelb-appserver:
 redis-server:
   image: redis:6.0.9
 yelb-db:
-  image: mreferre/yelb-db:0.10
+  image: mreferre/yelb-db:0.6
