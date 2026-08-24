@@ -1,7 +1,7 @@
 yelb-ui:
   image:
     repository: ghcr.io/vaishnavi639/yelb-ui
-    tag: 23c23f3acefecca765b4f0453b78c54b91a2008a
+    tag: 5b7cecbf55810ed2578e928dbc4e9027684f6ba9
   replicas: 1
 yelb-appserver:
   image:
